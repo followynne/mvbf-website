@@ -1,0 +1,151 @@
+:root {
+  font-family: 'Noto Sans', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  background-color: rgb(229, 229, 229, 1);
+  /* TODO: DOT cursor */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  .barlow-condensed-thin {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  .barlow-condensed-extralight {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+  .barlow-condensed-light {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  .barlow-condensed-regular {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .barlow-condensed-medium {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .barlow-condensed-semibold {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .barlow-condensed-bold {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .barlow-condensed-extrabold {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  .barlow-condensed-black {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  .barlow-condensed-thin-italic {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+
+  .barlow-condensed-extralight-italic {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+
+  .barlow-condensed-light-italic {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  .barlow-condensed-regular-italic {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .barlow-condensed-medium-italic {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  .barlow-condensed-semibold-italic {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  .barlow-condensed-bold-italic {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .barlow-condensed-extrabold-italic {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+
+  .barlow-condensed-black-italic {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(229, 229, 229, 1);
+  display: flex;
+  place-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  height: 0;
+  width: 0;
+}
