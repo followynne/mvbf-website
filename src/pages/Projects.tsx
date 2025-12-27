@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './projects.css';
 import { useIntersectionObserver } from 'usehooks-ts';
+import { getAssetPath } from '../util/paths';
 
 const threshold = [0, 0.6, 0.8, 1];
 export const Projects = () => {
@@ -19,7 +20,7 @@ export const Projects = () => {
         </div>
       </div>
       <div className='content-subtext'>
-        <img src='/prj_portada.jpg' className='img' />
+        <img src={getAssetPath('prj_portada.jpg')} className='img' />
         <div className='img_text'>
           <div className='main-title'>
             <span>Mytho</span>
@@ -35,7 +36,7 @@ export const Projects = () => {
       </div>
 
       <div className='content-third-level'>
-        <img src='/prj_collage.jpg' className='img' ref={ref} />
+        <img src={getAssetPath('prj_collage.jpg')} className='img' ref={ref} />
         <div className='left-text-wrapper'>
           <div className='left-text' style={{ opacity }}>
             <div>LIMBOLITERARIO</div>

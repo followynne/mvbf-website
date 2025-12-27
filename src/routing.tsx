@@ -1,11 +1,7 @@
 import { createBrowserRouter } from 'react-router';
 import App from './App';
 
-const newLocal = async () => {
-  const { Projects } = await import('./pages/Projects');
-
-  return { Component: Projects };
-};
+export const basename = 'mvbf-website';
 export const routing = createBrowserRouter(
   [
     {
@@ -21,7 +17,11 @@ export const routing = createBrowserRouter(
         },
         {
           index: true,
-          lazy: newLocal,
+          lazy: async () => {
+            const { Projects } = await import('./pages/Projects');
+
+            return { Component: Projects };
+          },
         },
         {
           path: '*',
@@ -30,5 +30,5 @@ export const routing = createBrowserRouter(
       ],
     },
   ],
-  { basename: 'mvbf-website' },
+  { basename },
 );
