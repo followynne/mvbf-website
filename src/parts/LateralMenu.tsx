@@ -4,11 +4,11 @@ import './lateral-menu.css';
 
 export const LateralMenu = () => (
   <div className='lateral-menu'>
-    <a href='/'>
+    <Link to='/'>
       <h1>
         <img className='logo-image' src={logo} />
       </h1>
-    </a>
+    </Link>
     <div className='menu-entries'>
       <Link to='/'>Projects</Link>
       <Link to='/about'>About</Link>
