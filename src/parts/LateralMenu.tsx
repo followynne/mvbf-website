@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import logo from '../assets/logo.svg';
 import './lateral-menu.css';
 
@@ -9,10 +10,10 @@ export const LateralMenu = () => (
       </h1>
     </a>
     <div className='menu-entries'>
-      <a>Projects</a>
-      <a>About</a>
-      <a>Contact</a>
-      <a>Blog</a>
+      <Link to='/'>Projects</Link>
+      <Link to='/about'>About</Link>
+      <Link to='/contact'>Contact</Link>
+      <Link to='/blog'>Blog</Link>
     </div>
   </div>
 );

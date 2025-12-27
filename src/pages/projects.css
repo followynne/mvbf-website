@@ -1,14 +1,14 @@
-.content-title {
-  font-size: 42px;
-  margin-top: 6.5em;
-  justify-items: start;
-  font-weight: 600;
-  line-height: 1.1;
-  letter-spacing: -0.05em;
-  padding-left: 8px;
+.content-title.projects {
+  margin-left: -0.5em;
 
-  span {
-    color: rgba(0, 0, 0, 0.2);
+  div {
+    font-size: 42px;
+    letter-spacing: -0.05em;
+    padding-left: 8px;
+
+    span {
+      color: rgba(0, 0, 0, 0.2);
+    }
   }
 }
 

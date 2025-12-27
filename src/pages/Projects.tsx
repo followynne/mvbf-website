@@ -12,7 +12,7 @@ export const Projects = () => {
 
   return (
     <>
-      <div className='content-title'>
+      <div className='content-title projects'>
         <div>Some of the</div>
         <div>
           selected <span>projects</span>

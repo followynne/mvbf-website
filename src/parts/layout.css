@@ -18,3 +18,14 @@
     }
   }
 }
+
+.content-title {
+  margin-top: 16em;
+  justify-items: start;
+  font-weight: 600;
+  line-height: 1.1;
+
+  span {
+    color: rgba(0, 0, 0, 0.2);
+  }
+}

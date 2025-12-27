@@ -156,3 +156,7 @@ body {
   min-width: 100vw;
   min-height: 100vh;
 }
+
+div::selection {
+  background-color: rgb(233, 233, 192);
+}
