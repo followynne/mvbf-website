@@ -6,26 +6,29 @@ const newLocal = async () => {
 
   return { Component: Projects };
 };
-export const routing = createBrowserRouter([
-  {
-    Component: App,
-    children: [
-      {
-        path: 'about',
-        lazy: async () => {
-          const { About } = await import('./pages/About');
+export const routing = createBrowserRouter(
+  [
+    {
+      Component: App,
+      children: [
+        {
+          path: 'about',
+          lazy: async () => {
+            const { About } = await import('./pages/About');
 
-          return { Component: About };
+            return { Component: About };
+          },
         },
-      },
-      {
-        index: true,
-        lazy: newLocal,
-      },
-      {
-        path: '*',
-        Component: () => <div style={{ marginTop: '1em' }}>Upcoming...</div>,
-      },
-    ],
-  },
-]);
+        {
+          index: true,
+          lazy: newLocal,
+        },
+        {
+          path: '*',
+          Component: () => <div style={{ marginTop: '1em' }}>Upcoming...</div>,
+        },
+      ],
+    },
+  ],
+  { basename: 'mvbf-website' },
+);
