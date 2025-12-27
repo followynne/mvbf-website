@@ -1,0 +1,20 @@
+.main {
+  min-width: 100vw;
+  height: 100vh;
+  background-color: rgb(229, 229, 229, 0.9);
+
+  .main-grid {
+    height: 95%;
+
+    .content {
+      width: 75%;
+      margin-left: 25%;
+      overflow-y: auto;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      scrollbar-width: none;
+    }
+  }
+}

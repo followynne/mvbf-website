@@ -1,0 +1,43 @@
+.rolling-footer {
+  background-color: rgb(50, 50, 50);
+  display: flex;
+  align-items: center;
+  height: 3%;
+  min-width: 100vw;
+
+  .scroll-container {
+    flex-grow: 1;
+    overflow: hidden;
+
+    .text-row {
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+    }
+
+    .infinite-scroll {
+      display: flex;
+      flex-direction: row;
+      gap: 0.3em;
+      animation: scroll 25s linear infinite;
+
+      .text-scroll {
+        color: rgb(188, 188, 188);
+        display: inline-flex;
+        gap: 0.3em;
+        align-items: center;
+        flex-shrink: 0;
+        font-size: 1.4em;
+      }
+    }
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
