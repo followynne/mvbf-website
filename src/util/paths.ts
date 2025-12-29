@@ -1,3 +1,4 @@
 import { basename } from '../routing';
 
-export const getAssetPath = (aPath: string) => `/${basename}/${aPath}`;
+const prefix = basename ? `/${basename}/` : '/';
+export const getAssetPath = (aPath: string) => `${prefix}${aPath}`;
